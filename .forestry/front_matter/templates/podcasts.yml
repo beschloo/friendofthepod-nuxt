@@ -1,4 +1,22 @@
 ---
-label: Podcasts
-hide_body: false
-fields: []
+label: Podcast
+hide_body: true
+fields:
+- name: podcast_title
+  type: text
+  config:
+    required: false
+  label: Podcast Title
+  description: Enter the name of the podcast
+- name: podcast_image
+  type: file
+  config:
+    maxSize: 64
+  label: Podcast Image
+  description: Upload the image for the podcast
+- name: show_url
+  type: text
+  config:
+    required: false
+  label: Show URL
+  description: enter the URL for the podcast
