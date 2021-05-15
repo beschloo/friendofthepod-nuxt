@@ -32,7 +32,7 @@
         },
         async asyncData() {
             try {
-                const data = await import(`~/content/data/info.json`);
+                const data = await import(`~/content/data/about.json`);
                 return {
                 data
                 }
@@ -49,3 +49,4 @@
         }
     }
 </script>
+

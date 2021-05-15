@@ -20,7 +20,7 @@ export default {
   css: ['~/assets/scss/main.scss'],
 
   styleResources: {
-    scss: ['~/assets/scss/_mixins.scss', '~/assets/scss/_variables.scss']
+    scss: ['~/assets/scss/_mixins.scss', '~/assets/scss/_variables.scss'],
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
