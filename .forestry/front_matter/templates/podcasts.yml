@@ -22,3 +22,4 @@ fields:
   description: enter the URL for the podcast
 pages:
 - content/data/projects.json/saving-sex-and-the-city-3.md
+- content/data/projects.json/sup.md
