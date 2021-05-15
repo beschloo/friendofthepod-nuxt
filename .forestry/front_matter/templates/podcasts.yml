@@ -20,3 +20,5 @@ fields:
     required: false
   label: Show URL
   description: enter the URL for the podcast
+pages:
+- content/data/projects.json/saving-sex-and-the-city-3.md
