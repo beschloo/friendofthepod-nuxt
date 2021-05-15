@@ -9,7 +9,6 @@ sections:
 - type: document
   path: content/data/about.json
   label: About Copy
-  match: "**/*"
 - type: heading
   label: Projects
 upload_dir: uploads
