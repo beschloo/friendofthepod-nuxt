@@ -1,24 +1,33 @@
 <template>
-  <section class="podcast_grid">
-    <div v-if="data" v-html="data.projects.json"></div>
-    <div class="podcast_block">
-      <div class="podcast_image__block">
-        <img
-          src="~assets/images/saving.png"
-          class="podcast-image"
-          alt="podcast"
-        />
-      </div>
-      <div class="podcast-title__flex">
-        <div class="podcast-title">Saving Sex & the City 3</div>
-      </div>
+  <section>
+    <div class="podcast-section__title-container">
+      <div class="podcast-section__title">PROJECTS</div>
     </div>
-    <div class="podcast_block">
-      <div class="podcast_image__block">
-        <img src="~assets/images/sup.png" class="podcast-image" alt="podcast" />
+    <div class="podcast_grid">
+      <!-- <div v-if="data" v-html="data.projects.json"></div> -->
+      <div class="podcast_block">
+        <div class="podcast_image__block">
+          <img
+            src="~assets/images/saving.png"
+            class="podcast-image"
+            alt="podcast"
+          />
+        </div>
+        <div class="podcast-title__flex">
+          <div class="podcast-title">Saving Sex & the City 3</div>
+        </div>
       </div>
-      <div class="podcast-title__flex">
-        <div class="podcast-title">SUP: Sexy Unique Podcast</div>
+      <div class="podcast_block">
+        <div class="podcast_image__block">
+          <img
+            src="~assets/images/sup.png"
+            class="podcast-image"
+            alt="podcast"
+          />
+        </div>
+        <div class="podcast-title__flex">
+          <div class="podcast-title">SUP: Sexy Unique Podcast</div>
+        </div>
       </div>
     </div>
   </section>
@@ -51,10 +60,27 @@
 </script>
 
 <style scoped>
+.podcast-section__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 280px;
+}
+.podcast-section__title {
+  font-family: rock;
+  font-size: 40px;
+  border: solid 3px #000;
+  background-color: #c1918b;
+  padding: 16px;
+  width: 262px;
+  margin-bottom: 56px;
+}
 .podcast_grid {
-  grid-auto-flow: column;
-  justify-content: space-around;
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   margin: 24px;
 }
 .podcast_block {
