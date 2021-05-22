@@ -1,13 +1,6 @@
 // Colors
-$primary: #ff521c;
-$secondary: #f9f6f2;
-$secondary-variant: #faf8f5;
-$success: #0a9462;
-$warning: #e30114;
 $white: #ffffff;
 $black: #000000;
-$gray: #ada291;
-$lightgray: #d7cfc5;
 
 // Breakpoints
 $mobile-width: 600px;
@@ -15,6 +8,7 @@ $tablet-width: 768px;
 $laptop-width: 1024px;
 $middle-width: 1200px;
 $desktop-width: 1440px;
+$desktop-large-width: 1600px;
 $breakpoints: (
   'mobile': $mobile-width,
   'tablet': $tablet-width,
@@ -22,6 +16,21 @@ $breakpoints: (
   'middle': $middle-width,
   'desktop': $desktop-width
 );
+
+//border widths
+$mobile-border: 3px;
+$tablet-border: 4px;
+$desktop-border: 5px;
+
+//window widths
+$mobile-window: 8px;
+$tablet-window: 10px;
+$desktop-window: 10px;
+
+//grid
+$mobile-grid-space: 1.5rem;
+$tablet-grid-space: 2.5rem;
+$grid-space: 4rem;
 
 // Fonts
 $primary-font: 'Sharp Sans', system-ui, 'Helvetica Neue', Arial, sans-serif;
