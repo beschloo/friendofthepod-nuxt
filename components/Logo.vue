@@ -18,10 +18,10 @@
   margin-top: 54px;
   margin-bottom: 104px;
   width: 376px;
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: 768px) {
     width: 248px;
   }
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: 600px) {
     width: 222px;
   }
 }

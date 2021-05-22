@@ -29,3 +29,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.info_blurb {
+  font-family: rock;
+  font-size: 18px;
+}
+</style>

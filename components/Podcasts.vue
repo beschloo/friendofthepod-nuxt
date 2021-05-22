@@ -5,10 +5,9 @@
       <div class="podcast_image__block">
         <img
           src="~assets/images/saving.png"
-          class="prodcast-image"
+          class="podcast-image"
           alt="podcast"
         />
-        <!-- <img src="~assets/images/saving.png" class="podcast-image-hover" alt="hover"> -->
       </div>
       <div class="podcast-title__flex">
         <div class="podcast-title">Saving Sex & the City 3</div>
@@ -17,10 +16,9 @@
     <div class="podcast_block">
       <div class="podcast_image__block">
         <img src="~assets/images/sup.png" class="podcast-image" alt="podcast" />
-        <!-- <img src="~assets/images/sup.png" class="podcast-image-hover" alt="hover"> -->
       </div>
       <div class="podcast-title__flex">
-        <div class="podcast-title">SUP</div>
+        <div class="podcast-title">SUP: Sexy Unique Podcast</div>
       </div>
     </div>
   </section>
@@ -62,7 +60,7 @@
 .podcast_block {
   position: relative;
   display: inline-block;
-  width: 380px;
+  width: 385px;
   height: 425px;
   padding: 34px;
   margin: 24px;
@@ -86,15 +84,21 @@
   object-fit: cover;
   width: 312px;
   height: 312px;
+  filter: grayscale(100%);
+}
+.podcast-image:hover {
+  filter: none;
 }
 .podcast-title__flex {
   display: flex;
   justify-content: space-around;
-  margin: 27px;
+  margin-top: 24px;
+  margin-bottom: 28px;
+  font-family: rock;
+  font-size: 24px;
 }
 .podcast_title {
   color: #000;
   padding: 32px;
-  font-size: 32px;
 }
 </style>
