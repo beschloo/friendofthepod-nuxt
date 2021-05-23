@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <img src="~assets/images/logo.png" class="fotp-logo" alt="logo" />
+    <img src="~assets/images/logo.svg" class="fotp-logo" alt="logo" />
   </div>
 </template>
 
