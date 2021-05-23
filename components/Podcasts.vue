@@ -59,7 +59,7 @@
 // // }
 </script>
 
-<style scoped>
+<style lang="scss">
 .podcast-section__title-container {
   display: flex;
   justify-content: center;

@@ -35,14 +35,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .info-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 280px;
-  margin-bottom: 104px;
 }
 .about-title {
   font-family: rock;
@@ -56,5 +55,6 @@ export default {
 .info_blurb {
   font-family: rock;
   font-size: 32px;
+  margin-bottom: 104px;
 }
 </style>
