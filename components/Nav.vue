@@ -11,7 +11,7 @@
   </section>
 </template>
 
-<style scoped>
+<style lang="scss">
 .nav {
   background-color: #c1918b;
   border-bottom: solid 3px #000;
@@ -29,13 +29,19 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+
+  li {
+    color: #000;
+    margin-right: 24px;
+  }
+
+  li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+  }
 }
-.links li {
-  color: #000;
-  margin-right: 24px;
-}
-.links li a {
-  color: #000;
-  text-decoration: none;
+li a:hover {
+  opacity: 0.4;
 }
 </style>
