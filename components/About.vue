@@ -1,10 +1,12 @@
 <template>
-  <div class="info-container">
-    <div class="about-title">ABOUT</div>
-    <section class="info_blurb">
-      <div v-if="data" v-html="data.about"></div>
-    </section>
-  </div>
+  <section id="about-start">
+    <div class="info-container">
+      <div class="about-title">ABOUT</div>
+      <div class="info_blurb">
+        <div v-if="data" v-html="data.about"></div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

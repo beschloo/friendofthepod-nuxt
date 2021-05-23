@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="projects-start">
     <div class="podcast-section__title-container">
       <div class="podcast-section__title">PROJECTS</div>
     </div>
@@ -111,6 +111,7 @@
   width: 312px;
   height: 312px;
   filter: grayscale(100%);
+  transition: 0.3s;
 }
 .podcast-image:hover {
   filter: none;

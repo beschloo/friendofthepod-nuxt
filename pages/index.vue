@@ -1,9 +1,11 @@
 <template>
   <div class="container">
     <div>
+      <Nav />
       <Logo />
       <About />
       <Podcasts />
+      <Footer />
     </div>
   </div>
 </template>
