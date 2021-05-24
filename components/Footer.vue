@@ -12,23 +12,19 @@
         <div class="contact-details">
           <div class="contact-title">CONTACT</div>
           <div class="phone">
-            <div class="phone-logo">
-              <img
-                src="~assets/images/phone-logo.svg"
-                class="phone-logo"
-                alt="phone-logo"
-              />
-            </div>
+            <img
+              src="~assets/images/phone-logo.svg"
+              class="phone-logo"
+              alt="phone-logo"
+            />
             <div class="phone-number">504-621-7648</div>
           </div>
           <div class="email">
-            <div class="email-logo">
-              <img
-                src="~assets/images/mail-logo.svg"
-                class="mail-logo"
-                alt="mail-logo"
-              />
-            </div>
+            <img
+              src="~assets/images/mail-logo.svg"
+              class="email-logo"
+              alt="email-logo"
+            />
             <div class="email-address">
               <a href="mailto:jonathan@friendofthepod.org"
                 >jonathan@friendofthepod.org</a
@@ -115,16 +111,11 @@
 }
 .phone-logo {
   margin-right: 19px;
-  height: 24px;
-  width: 24px;
 }
 .phone-number {
   font-size: 32px;
   margin-bottom: 6px;
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1024px) {
     font-size: 16px;
   }
 }
@@ -134,8 +125,6 @@
 }
 .email-logo {
   margin-right: 19px;
-  height: 24px;
-  width: 24px;
   padding-top: 8px;
 }
 .email-address {
@@ -160,6 +149,7 @@
 .copyright-copy {
   font-size: 16px;
   margin-bottom: 24px;
+  text-align: center;
   @media screen and (max-width: 768px) {
     font-size: 14px;
   }

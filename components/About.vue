@@ -42,10 +42,13 @@ export default {
   align-items: center;
   flex-direction: column;
   margin: 0 280px;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     margin: 0 47px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    margin: 0 47px;
+  }
+  @media screen and (max-width: 640px) {
     margin: 0 16px;
   }
 }
@@ -57,11 +60,16 @@ export default {
   padding: 16px;
   width: 262px;
   margin-bottom: 56px;
-  @media screen and (max-width: 768px) {
+  text-align: center;
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     width: 195px;
     font-size: 20px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    width: 195px;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 640px) {
     width: 195px;
     font-size: 20px;
   }
@@ -71,12 +79,18 @@ export default {
   font-size: 32px;
   margin-bottom: 104px;
   width: 1186px;
-  @media screen and (max-width: 768px) {
+  text-align: center;
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     font-size: 18px;
     width: 675px;
     margin-bottom: 64px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    font-size: 18px;
+    width: 675px;
+    margin-bottom: 64px;
+  }
+  @media screen and (max-width: 640px) {
     font-size: 18px;
     width: 370px;
     margin-bottom: 41px;

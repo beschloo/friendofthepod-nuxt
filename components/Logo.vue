@@ -18,11 +18,15 @@
   margin-top: 54px;
   margin-bottom: 104px;
   width: 376px;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
+    width: 280px;
+    margin: 64px 0;
+  }
+  @media screen and (min-width: 641px) and (max-width: 800px) {
     width: 246px;
     margin: 64px 0;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     width: 222px;
     margin: 40px 0 64px 0;
   }

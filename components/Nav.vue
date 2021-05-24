@@ -16,18 +16,24 @@
   background-color: #c1918b;
   border-bottom: solid 3px #000;
   height: 81px;
+  min-width: 100%;
   font-family: rock;
   font-size: 40px;
   color: #000;
   display: flex;
   justify-content: space-between;
-  padding: 16px 116px;
-  @media screen and (max-width: 768px) {
+  padding: 16px 24px;
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
+    height: 71px;
+    font-size: 20px;
+    padding: 24px 80px;
+  }
+  @media screen and (min-width: 641px) and (max-width: 800px) {
     height: 71px;
     font-size: 20px;
     padding: 24px 60px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     height: 65px;
     font-size: 20px;
     padding: 20px 0;
@@ -35,9 +41,11 @@
   }
 }
 .site-title {
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+  }
+  @media screen and (max-width: 640px) {
     display: none;
   }
 }
