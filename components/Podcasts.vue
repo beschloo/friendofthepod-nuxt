@@ -7,11 +7,17 @@
       <!-- <div v-if="data" v-html="data.projects.json"></div> -->
       <div class="podcast_block">
         <div class="podcast_image__block">
-          <img
-            src="~assets/images/saving.png"
+          <a
+            href="https://podcasts.apple.com/us/podcast/saving-sex-and-the-city-3/id1378862255"
             class="podcast-image"
-            alt="podcast"
-          />
+            target="_blank"
+          >
+            <img
+              src="~assets/images/saving.png"
+              class="podcast-image"
+              alt="podcast"
+            />
+          </a>
         </div>
         <div class="podcast-title__flex">
           <div class="podcast-title">Saving Sex & the City 3</div>
@@ -19,11 +25,17 @@
       </div>
       <div class="podcast_block">
         <div class="podcast_image__block">
-          <img
-            src="~assets/images/sup.png"
+          <a
+            href="https://podcasts.apple.com/us/podcast/sexy-unique-podcast/id1199768588"
             class="podcast-image"
-            alt="podcast"
-          />
+            target="_blank"
+          >
+            <img
+              src="~assets/images/sup.png"
+              class-podcast-image
+              alt="podcast"
+            />
+          </a>
         </div>
         <div class="podcast-title__flex">
           <div class="podcast-title">SUP: Sexy Unique Podcast</div>
