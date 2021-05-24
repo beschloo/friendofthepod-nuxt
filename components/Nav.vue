@@ -25,7 +25,7 @@
   @media screen and (max-width: 768px) {
     height: 71px;
     font-size: 20px;
-    padding: 24px 166px;
+    padding: 24px 60px;
   }
   @media screen and (max-width: 600px) {
     height: 65px;

@@ -37,14 +37,6 @@
           </div>
         </div>
       </div>
-      <div class="contact-section_right">
-        <a href="instagram.com" class="ig" target="_blank">
-          <img src="~assets/images/ig-logo.svg" class="ig-logo" alt="ig-logo" />
-        </a>
-        <a href="facebook.com" class="fb" target="_blank">
-          <img src="~assets/images/fb-logo.svg" class="fb-logo" alt="fb-logo" />
-        </a>
-      </div>
     </div>
     <div class="copyright">
       <div class="copyright-copy">Copyright 2021, Friend of the Pod</div>
@@ -60,12 +52,24 @@
   border-top: solid 3px #000;
   height: 429px;
   font-family: rock;
+  @media screen and (max-width: 768px) {
+    height: 325px;
+  }
+  @media screen and (max-width: 600px) {
+    height: 190px;
+  }
 }
 .contact-contents {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 80px 116px;
+  @media screen and (max-width: 768px) {
+    margin: 40px 60px;
+  }
+  @media screen and (max-width: 600px) {
+    margin: 20px 20px;
+  }
 }
 .contact-section_left {
   display: flex;
@@ -74,9 +78,21 @@
 }
 .fotp-logo {
   margin-right: 40px;
+  @media screen and (max-width: 768px) {
+    margin-right: 40px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-right: 40px;
+  }
 }
 .fotp-logo img {
   width: 168px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 .contact-details {
 }
@@ -85,6 +101,12 @@
   align-items: flex-start;
   font-size: 40px;
   margin-bottom: 18px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 .phone {
   display: flex;
@@ -99,6 +121,12 @@
 .phone-number {
   font-size: 32px;
   margin-bottom: 6px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
 }
 .email {
   display: flex;
@@ -112,6 +140,12 @@
 }
 .email-address {
   font-size: 32px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
 }
 .email-address a {
   color: #000;
@@ -121,34 +155,16 @@
 .email-address a:hover {
   opacity: 0.4;
 }
-.contact-section_right {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin: 13px;
-}
-.ig img {
-  height: 32px;
-  width: 32px;
-  margin-right: 10px;
-  transition: 0.3s;
-}
-.ig img:hover {
-  opacity: 0.4;
-}
-.fb img {
-  height: 32px;
-  width: 32px;
-  margin-left: 10px;
-  transition: 0.3s;
-}
-.fb img:hover {
-  opacity: 0.4;
-}
 .copyright {
 }
 .copyright-copy {
   font-size: 16px;
   margin-bottom: 24px;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
 }
 </style>

@@ -8,7 +8,7 @@
       <div class="podcast_block">
         <div class="podcast_image__block">
           <a
-            href="https://podcasts.apple.com/us/podcast/saving-sex-and-the-city-3/id1378862255"
+            href="https://open.spotify.com/show/5yHlD9lmwJavFz83AjI5yr?si=bsRJvuFNRD6JtipapDE9og"
             class="podcast-image"
             target="_blank"
           >
@@ -26,7 +26,7 @@
       <div class="podcast_block">
         <div class="podcast_image__block">
           <a
-            href="https://podcasts.apple.com/us/podcast/sexy-unique-podcast/id1199768588"
+            href="https://open.spotify.com/show/72KwUG8XvMncTWqM32NOHH?si=93WycFgNSIm0XUBztAKF9A"
             class="podcast-image"
             target="_blank"
           >
@@ -82,7 +82,7 @@
     margin: 0 114px;
   }
   @media screen and (max-width: 600px) {
-    margin: 0 16pxpx;
+    margin: 0 16px;
   }
 }
 .podcast-section__title {
