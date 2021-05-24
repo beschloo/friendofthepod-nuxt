@@ -20,9 +20,11 @@
   width: 376px;
   @media screen and (max-width: 768px) {
     width: 246px;
+    margin: 64px 0;
   }
   @media screen and (max-width: 600px) {
     width: 222px;
+    margin: 40px 0 64px 0;
   }
 }
 </style>

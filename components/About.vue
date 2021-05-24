@@ -42,6 +42,12 @@ export default {
   align-items: center;
   flex-direction: column;
   margin: 0 280px;
+  @media screen and (max-width: 768px) {
+    margin: 0 47px;
+  }
+  @media screen and (max-width: 600px) {
+    margin: 0 16px;
+  }
 }
 .about-title {
   font-family: rock;
@@ -51,10 +57,29 @@ export default {
   padding: 16px;
   width: 262px;
   margin-bottom: 56px;
+  @media screen and (max-width: 768px) {
+    width: 195px;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 195px;
+    font-size: 20px;
+  }
 }
 .info_blurb {
   font-family: rock;
   font-size: 32px;
   margin-bottom: 104px;
+  width: 1186px;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    width: 675px;
+    margin-bottom: 64px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+    width: 370px;
+    margin-bottom: 41px;
+  }
 }
 </style>
