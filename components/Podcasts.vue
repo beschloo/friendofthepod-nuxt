@@ -78,6 +78,12 @@
   align-items: center;
   flex-direction: column;
   margin: 0 280px;
+  @media screen and (max-width: 768px) {
+    margin: 0 114px;
+  }
+  @media screen and (max-width: 600px) {
+    margin: 0 16pxpx;
+  }
 }
 .podcast-section__title {
   font-family: rock;
@@ -87,6 +93,16 @@
   padding: 16px;
   width: 262px;
   margin-bottom: 56px;
+  @media screen and (max-width: 768px) {
+    width: 195px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 195px;
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
 }
 .podcast_grid {
   display: flex;
@@ -94,6 +110,11 @@
   align-items: center;
   flex-direction: row;
   margin: 24px;
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 .podcast_block {
   position: relative;
@@ -103,6 +124,18 @@
   padding: 34px;
   margin: 24px;
   border: solid 3px #000;
+  @media screen and (max-width: 768px) {
+    width: 265px;
+    height: 290px;
+    padding: 24px;
+    margin: 18px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 335px;
+    height: 360px;
+    padding: 24px;
+    margin: 18px;
+  }
 }
 .podcast_image__block img {
   position: relative;
@@ -112,6 +145,14 @@
   width: 312px;
   height: 312px;
   border: solid 3px #000;
+  @media screen and (max-width: 768px) {
+    width: 213px;
+    height: 213px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 281px;
+    height: 281px;
+  }
 }
 .podcast-image {
   position: relative;
@@ -124,6 +165,14 @@
   height: 312px;
   filter: grayscale(100%);
   transition: 0.3s;
+  @media screen and (max-width: 768px) {
+    width: 213px;
+    height: 213px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 281px;
+    height: 281px;
+  }
 }
 .podcast-image:hover {
   filter: none;
@@ -135,6 +184,16 @@
   margin-bottom: 28px;
   font-family: rock;
   font-size: 24px;
+  @media screen and (max-width: 768px) {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
 }
 .podcast_title {
   color: #000;
