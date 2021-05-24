@@ -29,17 +29,21 @@
                 alt="mail-logo"
               />
             </div>
-            <div class="email-address">jonathan@friendofthepod.org</div>
+            <div class="email-address">
+              <a href="mailto:jonathan@friendofthepod.org"
+                >jonathan@friendofthepod.org</a
+              >
+            </div>
           </div>
         </div>
       </div>
       <div class="contact-section_right">
-        <div class="ig">
+        <a href="instagram.com" class="ig" target="_blank">
           <img src="~assets/images/ig-logo.svg" class="ig-logo" alt="ig-logo" />
-        </div>
-        <div class="fb">
+        </a>
+        <a href="facebook.com" class="fb" target="_blank">
           <img src="~assets/images/fb-logo.svg" class="fb-logo" alt="fb-logo" />
-        </div>
+        </a>
       </div>
     </div>
     <div class="copyright">
@@ -48,7 +52,7 @@
   </section>
 </template>
 
-<style scoped>
+<style lang="scss">
 #contact-start {
   display: flex;
   flex-direction: column;
@@ -80,37 +84,42 @@
   display: flex;
   align-items: flex-start;
   font-size: 40px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 .phone {
   display: flex;
   flex-direction: row;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 .phone-logo {
   margin-right: 19px;
   height: 24px;
   width: 24px;
-  margin-bottom: 16px;
 }
 .phone-number {
   font-size: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 .email {
   display: flex;
   flex-direction: row;
-  margin-bottom: 16px;
 }
 .email-logo {
   margin-right: 19px;
   height: 24px;
   width: 24px;
-  margin-bottom: 16px;
+  padding-top: 8px;
 }
 .email-address {
   font-size: 32px;
-  margin-bottom: 16px;
+}
+.email-address a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.email-address a:hover {
+  opacity: 0.4;
 }
 .contact-section_right {
   display: flex;
@@ -118,15 +127,23 @@
   align-items: flex-end;
   margin: 13px;
 }
-.ig {
+.ig img {
   height: 32px;
   width: 32px;
   margin-right: 10px;
+  transition: 0.3s;
 }
-.fb {
+.ig img:hover {
+  opacity: 0.4;
+}
+.fb img {
   height: 32px;
   width: 32px;
   margin-left: 10px;
+  transition: 0.3s;
+}
+.fb img:hover {
+  opacity: 0.4;
 }
 .copyright {
 }
