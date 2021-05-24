@@ -22,8 +22,24 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 116px;
+  @media screen and (max-width: 768px) {
+    height: 71px;
+    font-size: 20px;
+    padding: 24px 166px;
+  }
+  @media screen and (max-width: 600px) {
+    height: 65px;
+    font-size: 20px;
+    padding: 20px 0;
+    justify-content: space-around;
+  }
 }
 .site-title {
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 .links {
   display: flex;
