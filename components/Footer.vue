@@ -48,10 +48,13 @@
   border-top: solid 3px #000;
   height: 429px;
   font-family: rock;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     height: 325px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    height: 190px;
+  }
+  @media screen and (max-width: 640px) {
     height: 190px;
   }
 }
@@ -60,10 +63,13 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 80px 116px;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     margin: 40px 60px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    margin: 20px 20px;
+  }
+  @media screen and (max-width: 640px) {
     margin: 20px 20px;
   }
 }
@@ -74,19 +80,16 @@
 }
 .fotp-logo {
   margin-right: 40px;
-  @media screen and (max-width: 768px) {
-    margin-right: 40px;
-  }
-  @media screen and (max-width: 600px) {
-    margin-right: 40px;
-  }
 }
 .fotp-logo img {
   width: 168px;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     width: 150px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 640px) {
     display: none;
   }
 }
@@ -97,10 +100,13 @@
   align-items: flex-start;
   font-size: 40px;
   margin-bottom: 18px;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     font-size: 24px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 640px) {
     font-size: 24px;
   }
 }
@@ -115,13 +121,21 @@
 .phone-number {
   font-size: 32px;
   margin-bottom: 6px;
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 640px) {
     font-size: 16px;
   }
 }
 .email {
   display: flex;
   flex-direction: row;
+  color: #000;
+  text-decoration: none;
 }
 .email-logo {
   margin-right: 19px;
@@ -129,10 +143,13 @@
 }
 .email-address {
   font-size: 32px;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     font-size: 16px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 640px) {
     font-size: 16px;
   }
 }
@@ -150,10 +167,13 @@
   font-size: 16px;
   margin-bottom: 24px;
   text-align: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     font-size: 14px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 641px) and (max-width: 800px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 640px) {
     font-size: 12px;
   }
 }
