@@ -53,12 +53,10 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-
   li {
     color: #000;
     margin-right: 24px;
   }
-
   li a {
     color: #000;
     text-decoration: none;
