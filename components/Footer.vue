@@ -123,6 +123,14 @@
     font-size: 16px;
   }
 }
+.phone-number a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.phone-number a:hover {
+  opacity: 0.4;
+}
 .email {
   display: flex;
   flex-direction: row;
