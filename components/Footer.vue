@@ -17,7 +17,9 @@
               class="phone-logo"
               alt="phone-logo"
             />
-            <div class="phone-number">504-621-7648</div>
+            <div class="phone-number">
+              <a href="tel:+504-621-7648">504-621-7648</a>
+            </div>
           </div>
           <div class="email">
             <img
