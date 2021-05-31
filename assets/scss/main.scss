@@ -1,7 +1,7 @@
 // Colors
 $white: #ffffff;
 $black: #000000;
-$dark-coral: #C1918B;
+$dark-coral: #c1918b;
 
 // Breakpoints
 $mobile-width: 600px;
@@ -15,7 +15,7 @@ $breakpoints: (
   'tablet': $tablet-width,
   'laptop': $laptop-width,
   'middle': $middle-width,
-  'desktop': $desktop-width
+  'desktop': $desktop-width,
 );
 
 //border widths
@@ -36,7 +36,7 @@ $grid-space: 4rem;
 // Fonts
 @font-face {
   font-family: rock;
-  src: url("~assets/fonts/ROCK.TTF") format("truetype");
+  src: url('~assets/fonts/ROCK.TTF') format('truetype');
 }
 $primary-font: 'Sharp Sans', system-ui, 'Helvetica Neue', Arial, sans-serif;
 
@@ -75,3 +75,7 @@ $sidebar-width: 178px;
 //header
 $nav-height: 108px;
 $mobile-nav-height: 64px;
+
+html {
+  scroll-behavior: smooth;
+}
