@@ -94,6 +94,8 @@ export default {
     font-size: 18px;
     width: 370px;
     margin-bottom: 41px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 </style>
