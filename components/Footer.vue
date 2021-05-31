@@ -46,17 +46,7 @@
   flex-direction: column;
   background-color: #c1918b;
   border-top: solid 3px #000;
-  height: 429px;
   font-family: rock;
-  @media screen and (min-width: 801px) and (max-width: 1024px) {
-    height: 325px;
-  }
-  @media screen and (min-width: 641px) and (max-width: 800px) {
-    height: 190px;
-  }
-  @media screen and (max-width: 640px) {
-    height: 190px;
-  }
 }
 .contact-contents {
   display: flex;
