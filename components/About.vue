@@ -41,7 +41,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 280px;
+  margin: 0 110px;
   @media screen and (min-width: 801px) and (max-width: 1024px) {
     margin: 0 47px;
   }
@@ -78,21 +78,17 @@ export default {
   font-family: rock;
   font-size: 32px;
   margin-bottom: 104px;
-  width: 1186px;
   text-align: center;
   @media screen and (min-width: 801px) and (max-width: 1024px) {
     font-size: 18px;
-    width: 675px;
     margin-bottom: 64px;
   }
   @media screen and (min-width: 641px) and (max-width: 800px) {
     font-size: 18px;
-    width: 675px;
     margin-bottom: 64px;
   }
   @media screen and (max-width: 640px) {
     font-size: 18px;
-    width: 370px;
     margin-bottom: 41px;
     padding-right: 16px;
     padding-left: 16px;
