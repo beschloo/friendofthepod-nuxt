@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'friend of the pod',
+    title: 'Friend of the Pod',
     htmlAttrs: {
       lang: 'en',
     },
