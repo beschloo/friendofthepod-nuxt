@@ -31,7 +31,7 @@
             target="_blank"
           >
             <img
-              src="~assets/images/sup.png"
+              src="~assets/images/sup.jpg"
               class-podcast-image
               alt="podcast"
             />
