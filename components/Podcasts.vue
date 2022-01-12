@@ -41,6 +41,24 @@
           <div class="podcast-title">SUP: Sexy Unique Podcast</div>
         </div>
       </div>
+      <div class="podcast_block">
+        <div class="podcast_image__block">
+          <a
+            href="https://open.spotify.com/show/0hWYHGpcgaDhEkTpWsMZ8Q?si=5224607427274cbc"
+            class="podcast-image"
+            target="_blank"
+          >
+            <img
+              src="~assets/images/gayasspodcast.jpg"
+              class-podcast-image
+              alt="podcast"
+            />
+          </a>
+        </div>
+        <div class="podcast-title__flex">
+          <div class="podcast-title">That's a Gay Ass Podcast</div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
