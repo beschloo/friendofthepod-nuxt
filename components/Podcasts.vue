@@ -59,6 +59,24 @@
           <div class="podcast-title">That's a Gay Ass Podcast</div>
         </div>
       </div>
+      <div class="podcast_block">
+        <div class="podcast_image__block">
+          <a
+            href="https://open.spotify.com/show/6rOdElQl90RMJq3rlwwGmK?si=b643ed96b9db48c7&nd=1"
+            class="podcast-image"
+            target="_blank"
+          >
+            <img
+              src="~assets/images/sex-w-emily-friend-of-the-pod.jpg"
+              class-podcast-image
+              alt="podcast"
+            />
+          </a>
+        </div>
+        <div class="podcast-title__flex">
+          <div class="podcast-title">Sex w/ Emily</div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
