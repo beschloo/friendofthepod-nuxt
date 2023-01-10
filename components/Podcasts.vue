@@ -4,77 +4,30 @@
       <div class="podcast-section__title">PROJECTS</div>
     </div>
     <div class="podcast_grid">
-      <!-- <div v-if="data" v-html="data.projects.json"></div> -->
-      <div class="podcast_block">
+      <div
+        class="podcast_block"
+        v-bind:key="podcast._id"
+        v-for="podcast in podcasts"
+      >
         <div class="podcast_image__block">
-          <a
-            href="https://open.spotify.com/show/5yHlD9lmwJavFz83AjI5yr?si=bsRJvuFNRD6JtipapDE9og"
-            class="podcast-image"
-            target="_blank"
-          >
-            <img
-              src="~assets/images/saving.png"
-              class="podcast-image"
-              alt="podcast"
-            />
+          <a :href="podcast.podcastURL" class="podcast-image" target="_blank">
+            <SanityImage
+              :asset-id="podcast.podcastImage.asset._ref"
+              auto="format"
+            >
+              <template #default="{ src }">
+                <img
+                  :src="src"
+                  loading="lazy"
+                  class="podcast-image"
+                  alt="podcast"
+                />
+              </template>
+            </SanityImage>
           </a>
         </div>
         <div class="podcast-title__flex">
-          <div class="podcast-title">Saving Sex & the City 3</div>
-        </div>
-      </div>
-      <div class="podcast_block">
-        <div class="podcast_image__block">
-          <a
-            href="https://open.spotify.com/show/72KwUG8XvMncTWqM32NOHH?si=93WycFgNSIm0XUBztAKF9A"
-            class="podcast-image"
-            target="_blank"
-          >
-            <img
-              src="~assets/images/sup.jpg"
-              class-podcast-image
-              alt="podcast"
-            />
-          </a>
-        </div>
-        <div class="podcast-title__flex">
-          <div class="podcast-title">SUP: Sexy Unique Podcast</div>
-        </div>
-      </div>
-      <div class="podcast_block">
-        <div class="podcast_image__block">
-          <a
-            href="https://open.spotify.com/show/0hWYHGpcgaDhEkTpWsMZ8Q?si=5224607427274cbc"
-            class="podcast-image"
-            target="_blank"
-          >
-            <img
-              src="~assets/images/gayasspodcast.jpg"
-              class-podcast-image
-              alt="podcast"
-            />
-          </a>
-        </div>
-        <div class="podcast-title__flex">
-          <div class="podcast-title">That's a Gay Ass Podcast</div>
-        </div>
-      </div>
-      <div class="podcast_block">
-        <div class="podcast_image__block">
-          <a
-            href="https://open.spotify.com/show/6rOdElQl90RMJq3rlwwGmK?si=b643ed96b9db48c7&nd=1"
-            class="podcast-image"
-            target="_blank"
-          >
-            <img
-              src="~assets/images/sex-w-emily-friend-of-the-pod.jpg"
-              class-podcast-image
-              alt="podcast"
-            />
-          </a>
-        </div>
-        <div class="podcast-title__flex">
-          <div class="podcast-title">Sex w/ Emily</div>
+          <div class="podcast-title">{{ podcast.podcastTitle }}</div>
         </div>
       </div>
     </div>
@@ -82,29 +35,25 @@
 </template>
 
 <script>
-// // export default {
-// //   layout: 'layout',
-// //   data() {
-// //     return {
-// //       data: {
-// //         about: '',
-// //       },
-// //     }
-// //   },
-// //   async fetch() {
-// //     try {
-// //       const data = await import(`~/content/data/podcasts.json`)
-// //       this.data = data
-// //     } catch (err) {
-// //       return false
-// //     }
-// //   },
-// //   computed: {
-// //     isInfoPage() {
-// //       return this.$nuxt._route.name === 'info' && true
-// //     },
-// //   },
-// // }
+import { groq } from '@nuxtjs/sanity'
+
+const query = groq`*[_type == 'podcastSection']
+{
+  podcast
+}`
+
+export default {
+  data() {
+    return {
+      podcasts: [],
+    }
+  },
+  async fetch() {
+    // try {
+    const result = await this.$sanity.fetch(query)
+    this.podcasts = result[0].podcast
+  },
+}
 </script>
 
 <style lang="scss">
@@ -150,17 +99,24 @@
   }
 }
 .podcast_grid {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  grid-template-columns: repeat(2, 1fr);
   margin: 24px;
+
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 801px) and (max-width: 1024px) {
+    max-width: 70vw;
   }
   @media screen and (min-width: 641px) and (max-width: 800px) {
   }
   @media screen and (max-width: 640px) {
-    flex-direction: column;
+    // flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .podcast_block {
@@ -175,20 +131,23 @@
     width: 265px;
     height: 290px;
     padding: 24px;
-    margin: 18px;
+    // margin: 18px;
   }
   @media screen and (min-width: 641px) and (max-width: 800px) {
     width: 265px;
     height: 290px;
     padding: 24px;
-    margin: 18px;
+    // margin: 18px;
   }
   @media screen and (max-width: 640px) {
     width: 335px;
     height: 360px;
     padding: 24px;
-    margin: 18px;
+    // margin: 18px;
   }
+
+  margin-left: auto;
+  margin-right: auto;
 }
 .podcast_image__block img {
   position: relative;

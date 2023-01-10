@@ -3,34 +3,29 @@
     <div class="info-container">
       <div class="about-title">ABOUT</div>
       <div class="info_blurb">
-        <div v-if="data" v-html="data.about"></div>
+        <p>
+          {{ about }}
+        </p>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import { groq } from '@nuxtjs/sanity'
+
+const query = groq`*[_type == 'aboutSection']`
+
 export default {
   layout: 'layout',
   data() {
     return {
-      data: {
-        about: '',
-      },
+      about: '',
     }
   },
   async fetch() {
-    try {
-      const data = await import(`~/content/data/about.json`)
-      this.data = data
-    } catch (err) {
-      return false
-    }
-  },
-  computed: {
-    isInfoPage() {
-      return this.$nuxt._route.name === 'info' && true
-    },
+    const result = await this.$sanity.fetch(query)
+    this.about = result[0].aboutText
   },
 }
 </script>
