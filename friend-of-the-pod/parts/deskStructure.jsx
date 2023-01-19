@@ -2,7 +2,7 @@
 
 export const structure = (S) =>
   S.list()
-    .title('About Section')
+    .title('Content')
     .items([
       // Make a singleton of the document with ID “siteSettings”
       S.listItem()

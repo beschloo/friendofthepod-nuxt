@@ -9,5 +9,12 @@ export default {
             type: 'array',
             of: [{ type: 'podcast' }],
         }
-    ]
+    ],
+    preview: {
+        prepare() {
+            return {
+                title: 'Podcast Section',
+            }
+        }
+    }
 }
