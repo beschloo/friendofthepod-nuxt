@@ -12,21 +12,13 @@
 </template>
 
 <script>
-import { groq } from '@nuxtjs/sanity'
+// import { groq } from '@nuxtjs/sanity'
 
-const query = groq`*[_type == 'aboutSection']`
+// const query = groq`*[_type == 'aboutSection']`
 
 export default {
   layout: 'layout',
-  data() {
-    return {
-      about: '',
-    }
-  },
-  async fetch() {
-    const result = await this.$sanity.fetch(query)
-    this.about = result[0].aboutText
-  },
+  props: ['about'],
 }
 </script>
 

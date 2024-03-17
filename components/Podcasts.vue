@@ -35,24 +35,8 @@
 </template>
 
 <script>
-import { groq } from '@nuxtjs/sanity'
-
-const query = groq`*[_type == 'podcastSection']
-{
-  podcast
-}`
-
 export default {
-  data() {
-    return {
-      podcasts: [],
-    }
-  },
-  async fetch() {
-    // try {
-    const result = await this.$sanity.fetch(query)
-    this.podcasts = result[0].podcast
-  },
+  props: ['podcasts'],
 }
 </script>
 
