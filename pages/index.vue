@@ -3,15 +3,32 @@
     <div>
       <Nav />
       <Logo />
-      <About />
-      <Podcasts />
+      <About :about="about" />
+      <Podcasts :podcasts="podcasts" />
       <Footer />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import { groq } from '@nuxtjs/sanity'
+
+const queryAbout = groq`*[_type == 'aboutSection']`
+const queryPodcast = groq`*[_type == 'podcastSection']
+{
+  podcast
+}`
+
+export default {
+  async asyncData({ $sanity }) {
+    const resultAbout = await $sanity.fetch(queryAbout)
+    const resultPodcasts = await $sanity.fetch(queryPodcast)
+    const about = resultAbout[0].aboutText
+    const podcasts = resultPodcasts[0].podcast
+    // console.log('about : ', about)
+    return { about, podcasts }
+  },
+}
 </script>
 
 <style>

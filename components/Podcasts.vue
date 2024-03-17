@@ -35,24 +35,8 @@
 </template>
 
 <script>
-import { groq } from '@nuxtjs/sanity'
-
-const query = groq`*[_type == 'podcastSection']
-{
-  podcast
-}`
-
 export default {
-  data() {
-    return {
-      podcasts: [],
-    }
-  },
-  async fetch() {
-    // try {
-    const result = await this.$sanity.fetch(query)
-    this.podcasts = result[0].podcast
-  },
+  props: ['podcasts'],
 }
 </script>
 
@@ -103,16 +87,19 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 24px;
-
-  max-width: 860px;
+  gap: 24px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 860px;
   @media screen and (min-width: 801px) and (max-width: 1024px) {
     max-width: 70vw;
+    gap: unset;
+    grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (min-width: 641px) and (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 640px) {
     // flex-direction: column;
@@ -125,8 +112,8 @@ export default {
   width: 385px;
   height: 425px;
   padding: 34px;
-  margin: 24px;
   border: solid 3px #000;
+  margin: 24px;
   @media screen and (min-width: 801px) and (max-width: 1024px) {
     width: 265px;
     height: 290px;
